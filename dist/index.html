@@ -1,0 +1,1485 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Map -->
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' />
+    
+    <!-- Title -->
+    <title>Dolcetice - Dessert & Cafe</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-togglable fixed-top">
+      <div class="container">
+    
+        <!-- Navbar brand (mobile) -->
+        <a class="navbar-brand d-lg-none" href="./index.html">Dolcetice</a>
+    
+        <!-- Navbar toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Navbar nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="./about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./reservation.html">Reservation</a>
+            </li>
+          </ul>
+    
+          <!-- Navbar brand -->
+          <a class="navbar-brand d-none d-lg-flex mx-lg-auto" href="./index.html">
+            Dolcetice
+          </a>
+    
+          <!-- Navbar nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="./login.html">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./mypage.html">MyPage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./review.html">Review</a>
+            </li>
+          </ul>
+    
+        </div>
+      </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <header data-jarallax data-speed=".8" style="background-image: url(assets/img/1.jpg);">
+      <div class="d-flex flex-column min-vh-100 bg-black-50 pt-10 pt-md-8 pb-7 pb-md-0">
+        <div class="container my-auto">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 text-center">
+
+              <!-- Preheading -->
+              <h6 class="text-xs text-white-75">
+                <!-- <span class="text-primary">DESSERT&CAFE</span>  -->
+              </h6>
+
+              <!-- Heading -->
+              <h1 class="display-1 text-white mb-4">
+                <!-- Dolcetice -->
+              </h1>
+
+              <!-- Subheading -->
+              <p class="text-center text-white-75 mb-7">
+                <!-- 여기가 내가 자주가는 커피 맛집 -->
+              </p>
+
+              <!-- Button -->
+              <!-- <a class="btn btn-outline-primary text-white text-primary-hover mb-7 mb-md-0" href="#reservation">
+                entrer
+              </a> -->
+
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+
+              <!-- Social links -->
+              <ul class="list-inline text-center text-md-start mb-3 my-md-5">
+                <li class="list-inline-item">
+                  <a class="text-white-75 text-primary-hover" href="https://pf.kakao.com/_qZitxb">
+                    <i class="far fa-comment"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item ms-5">
+                  <a class="text-white-75 text-primary-hover" href="https://m.blog.naver.com/PostList.naver?blogId=eumsooyup">
+                    <i class="far fa-comment-alt"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item ms-5">
+                  <a class="text-white-75 text-primary-hover" href="https://www.instagram.com/dolcetice/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-md">
+
+              <!-- Address -->
+              <p class="font-serif text-white-75 text-center text-md-end text-lg-end my-md-5">
+                <i class="fas fa-map-marker-alt text-primary me-3"></i>인천 미추홀구 학익동 45-37번지 1층
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- DISCOVER -->
+    <section class="pt-7 pt-md-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+
+            <!-- Divider -->
+            <hr class="hr-sm bg-primary">
+
+            <!-- Text -->
+            <p class="fs-lg lh-lg text-black mb-5 mb-md-0">
+              Cake
+            </p>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Media -->
+            <div class="media-decoration media-decoration-1 mb-5 mb-md-0">
+
+              <!-- Border -->
+              <div class="media-decoration-border" data-jarallax-element="-40"></div>
+
+              <!-- Image -->
+              <img class="media-decoration-img img-fluid" src="assets/img/KakaoTalk_20221109_181236664_01.jpg" alt="...">
+
+            </div>
+
+          </div>
+          <div class="col-md-5 align-self-center mx-auto">
+
+            <!-- Heading -->
+            <h2 class="mb-2">
+              <em>Cake</em> amazing experience
+            </h2>
+
+            <!-- Text -->
+            <p class="mb-0">
+              <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veritatis nisi, consequatur, laborum libero a neque ducimus. Porro rem illum quo nostrum quisquam asperiores. Possimus facilis velit, voluptatibus! -->
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOVER -->
+    <section class="py-7 py-md-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 order-md-2 align-self-end">
+
+            <!-- Divider -->
+            <hr class="hr-sm bg-primary">
+
+            <!-- Text -->
+            <p class="fs-lg lh-lg text-black mb-5 mb-md-0">
+              <!-- Great variety of foods you will enjoy. -->
+              Cake
+            </p>
+
+          </div>
+          <div class="col-md-4 order-md-3">
+
+            <!-- Media -->
+            <div class="media-decoration media-decoration-1 mb-5 mb-md-0">
+
+              <!-- Solid -->
+              <div class="media-decoration-solid" data-jarallax-element="-40"></div>
+
+              <!-- Border -->
+              <div class="media-decoration-border" data-jarallax-element="-40"></div>
+
+              <!-- Image -->
+              <img class="media-decoration-img img-fluid" src="assets/img/redcake.jpg" alt="...">
+
+            </div>
+
+          </div>
+          <div class="col-md-5 order-md-1 align-self-center mx-auto">
+
+            <!-- Heading -->
+            <h2 class="mb-2">
+              <!-- <em>Beautiful</em> outdoor seating -->
+            </h2>
+
+            <!-- Text -->
+            <p class="mb-0">
+              <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quae similique asperiores consequatur! Nihil temporibus qui enim. Accusamus voluptates a, et quidem! Quo, et? -->
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section data-jarallax data-speed=".8" style="background-image: url(assets/img/19.jpg);">
+      <div class="min-vh-100 py-7 py-md-9 bg-gradient-bottom-end-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+
+              <!-- Divider -->
+              <hr class="hr-sm bg-primary">
+
+              <!-- Text -->
+              <p class="fs-lg lh-lg text-black mb-0">
+                Macaron 
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="py-7 py-md-9 border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+
+            <!-- Heading -->
+            <h2 class="mb-2">
+              메뉴를 고르면 되그등요?
+            </h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">
+              아주 맛있고 기가 맥힌 메뉴들이 많그든요? 한번 골라보세요!
+            </p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+
+            <!-- Navigation -->
+            <div class="nav justify-content-center mb-6" id="menuTabs" role="tablist">
+              <a class="nav-link active" id="mainsTab" data-bs-toggle="tab" href="#mains" role="tab" aria-controls="mains" aria-selected="true">
+                Cake
+              </a>
+              <a class="nav-link" id="lunchTab" data-bs-toggle="tab" href="#lunch" role="tab" aria-controls="lunch">
+                Macaron
+              </a>
+              <a class="nav-link" id="dinnerTab" data-bs-toggle="tab" href="#dinner" role="tab" aria-controls="dinner">
+                Bakery
+              </a>
+              <a class="nav-link" id="drinksTab" data-bs-toggle="tab" href="#drinks" role="tab" aria-controls="drinks">
+                Drinks
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Content -->
+            <div class="tab-content" id="menuContent">
+              <div class="tab-pane fade show active" id="mains" role="tabpanel" aria-labelledby="mainsTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/26.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">1호</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            1호 케이크
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            48.0
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/27.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">2호</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            2호 케이크
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            53.0
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/28.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">도시락 케이크</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            도시락 맛이 나는 케이크
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            23.0
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/22.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">조각 케이크</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            토막낸 케이크
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            16.0
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunchTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/29.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">발로나초코</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            초코맛 강력하게 나는 마카롱
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            2.5
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/30.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">오레오레오</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            오레오 맛 강력하게 나버리는 아주 맛있는 마카롱. 강추!
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            2.0
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/31.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">블루베리요거트</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            블루베리 요거트 맛이 나버리는 그런 마카롱
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            2.5
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/32.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">상큼레몬</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            상큼한 레몬맛이 대뇌로 전달되는 강력한 마카롱
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            2.5
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/32.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">바닐라</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            바닐라맛이 진허게 나버리는 마카롱
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            2.5
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/33.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">뽀또치즈</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            과자 뽀또의 맛이 아주 기가 맥히게 나버리는 마카롱
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            2.0
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinnerTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/28.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">카이막</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            꿀 + 카이막 + 소프트 바케트
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            7.5
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/26.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">에그타르트</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            계란이 왔어요
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            3.0
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/29.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">초코 스모어</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            초코맛이 난다고래
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            3.9
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/27.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">초코 휘낭시에</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            초코맛 휘낭시에
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            2.6
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/30.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">말차크림치즈 스모어</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            말차
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            3.9
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/31.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">츄러스 휘낭시에</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            츄러스 맛이 뿡뿡
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            2.6
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinksTab">
+                <div class="row">
+
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/26.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            $15
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/30.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            $23
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/29.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            $15
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/27.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            $23
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/28.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            $16
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/31.jpg" alt="...">
+                          </div>
+
+                        </div>
+                        <div class="col-7">
+
+                          <!-- Heading -->
+                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                          </p>
+
+                        </div>
+                        <div class="col-2">
+
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-black">
+                            $16
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section class="pt-7 pt-md-9">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+  
+            <!-- Heading -->
+            <h2 class="mb-2">
+              Lettering Cake reservation
+            </h2>
+  
+            <!-- Subheading -->
+            <p class="mb-6">
+              Cake Size<br>
+              Size 1 (d = 15cm)<br>
+              Size 2 (d = 18cm)<br>
+              Size Lunch Box (d = 10cm)
+            </p>
+  
+            <p class="mb-6">
+              How made Cake?<br>
+              inside : chocosheet + oreo cream<br>
+              outside : creamcheeze cream
+  
+            </p>
+  
+  
+  
+          </div>
+        </div>
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-8">
+  
+            <!-- Form -->
+            <form id="reservationForm">
+              <div class="row gx-3">
+                <div class="col-md-6">
+  
+                  <!-- Contact number (hidden) -->
+                  <input type="hidden" name="contact_number">
+  
+                  <!-- Full name -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="user_name">Name</label>
+                    <input class="form-control" id="user_name" name="user_name" type="text" placeholder="Full name"
+                      required>
+                  </div>
+  
+                  <!-- Phone number -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="user_phone">Phone number</label>
+                    <input class="form-control" id="user_phone" name="user_phone" type="tel" placeholder="Phone number"
+                      required>
+                  </div>
+  
+                  <!-- Email address -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="user_email">Email address</label>
+                    <input class="form-control" id="user_email" name="user_email" type="email" placeholder="Email address"
+                      required>
+                  </div>
+  
+                </div>
+                <div class="col-md-6">
+  
+                  <!-- Guests -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="guests">Sizes</label>
+                    <select class="form-select" id="guests" name="guests" required>
+                      <option value="1" selected="">Size : 1</option>
+                      <option value="2">Size : 2</option>
+                      <option value="3">Size : Lunch Box</option>
+                    </select>
+                  </div>
+  
+                  <!-- Date -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="date">Date</label>
+                    <input class="form-control" id="date" name="date" type="date" value="2022-01-01" required>
+                  </div>
+  
+                  <!-- Time -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="time">Time</label>
+                    <input class="form-control" id="time" name="time" type="time" value="12:00" required>
+                  </div>
+  
+                </div>
+                <div class="col text-center">
+  
+                  <!-- Button -->
+                  <button class="btn btn-outline-primary" type="submit">
+                    Reserve a Cake
+                  </button>
+  
+                </div>
+              </div>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- PHONE -->
+    <section class="py-7 py-md-9">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="block-decoration-1 py-3">
+  
+              <!-- Text -->
+              <p class="mb-2 text-xs text-center">
+                or call us:
+              </p>
+  
+              <!-- Phone -->
+              <a class="display-6 font-serif text-decoration-none text-black" href="tel:010-4188-6073">010 4188 6073</a>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-7 py-md-9 border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+
+            <!-- Heading -->
+            <h2 class="mb-2">
+              Review
+            </h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">
+             
+            </p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Slider -->
+            <div data-flickity='{"imagesLoaded": true, "wrapAround": true}'>
+              <div class="w-100">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-8 col-md-3 order-md-1">
+
+                    <!-- Avatar -->
+                    <img class="img-fluid rounded-circle mb-5 mb-md-0" src="assets/img/KakaoTalk_20221109_181236664_06.jpg" alt="..." />
+
+                  </div>
+                  <div class="col-md-7 order-md-0">
+
+                    <!-- Blockquote -->
+                    <figure class="mx-auto mb-0" style="max-width: 500px;">
+                      <blockquote class="blockquote mb-0">
+                        <p class="font-serif text-black mb-5">
+                            카이막 너무너무 맛있어요 먹어본적은 없지만
+                        </p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer text-xs mb-0">
+                        고광민
+                      </figcaption>
+                    </figure>
+
+                  </div>
+                </div>
+              </div>
+              <div class="w-100">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-8 col-md-3 order-md-1">
+
+                    <!-- Avatar -->
+                    <img class="img-fluid rounded-circle mb-5 mb-md-0" src="assets/img/Ho.png" alt="..." />
+                     
+                  </div>
+                  <div class="col-md-7 order-md-0">
+
+                    <!-- Blockquote -->
+                    <figure class="mx-auto mb-0" style="max-width: 500px;">
+                      <blockquote class="blockquote mb-0">
+                        <p class="font-serif text-black mb-5">
+                          음... 저는 어렸을때 부터 돌체만 먹고 자랐어요 너무 강추해요 꼭 드세요 돌체티스 파이팅!
+                        </p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer text-xs mb-0">
+                        Cristiano Ronaldo dos Santos Aveiro
+                      </figcaption>
+                    </figure>
+
+                  </div>
+                </div>
+              </div>
+              <div class="w-100">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-8 col-md-3 order-md-1">
+
+                    <!-- Avatar -->
+                    <img class="img-fluid rounded-circle mb-5 mb-md-0" src="assets/img/22.jpg" alt="..." />
+
+                  </div>
+                  <div class="col-md-7 order-md-0">
+
+                    <!-- Blockquote -->
+                    <figure class="mx-auto mb-0" style="max-width: 500px;">
+                      <blockquote class="blockquote mb-0">
+                        <p class="font-serif text-black mb-5">
+                          조직력 원툴
+                        </p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer text-xs mb-0">
+                        개노답4인조
+                      </figcaption>
+                    </figure>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class=" py-7 py-md-9">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+
+            <!-- Heading -->
+            <h2 class="mb-2">
+              Dolcetice gallery
+            </h2>
+
+            <!-- Subheading -->
+            <p class=" mb-6">
+              <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
+            </p>
+
+          </div>
+        </div>
+        <div class="row gx-3" data-isotope>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/berryade.jpg" }'>
+              <img class="img-fluid" src="assets/img/berryade.jpg" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/KakaoTalk_20221107_140128988.jpg" }'>
+              <img class="img-fluid" src="assets/img/KakaoTalk_20221107_140128988.jpg" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/KakaoTalk_20221107_140128988_01.jpg" }'>
+              <img class="img-fluid" src="assets/img/KakaoTalk_20221107_140128988_01.jpg" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/KakaoTalk_20221109_181236664_01.jpg" }'>
+              <img class="img-fluid" src="assets/img/KakaoTalk_20221109_181236664_01.jpg" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "assets/img/KakaoTalk_20221109_181236664_02.jpg" }'>
+              <img class="img-fluid" src="assets/img/KakaoTalk_20221109_181236664_02.jpg" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "assets/img/KakaoTalk_20221109_181236664_04.jpg" }'>
+              <img class="img-fluid" src="assets/img/KakaoTalk_20221109_181236664_04.jpg" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "ssets/img/KakaoTalk_20221109_181236664_06.jpg" }'>
+              <img class="img-fluid" src="assets/img/KakaoTalk_20221109_181236664_06.jpg" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/KakaoTalk_20221109_181236664_10.jpg" }'>
+              <img class="img-fluid" src="assets/img/KakaoTalk_20221109_181236664_10.jpg" alt="...">
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="bg-light" data-map='{"center": [-118.244615, 34.052979], "zoom": 12}' style="height: 30rem;">
+      <!-- * 카카오맵 - 지도퍼가기 -->
+      <!-- 1. 지도 노드 -->
+      <div id="daumRoughmapContainer1669247169154" class="root_daum_roughmap root_daum_roughmap_landing"style="width:100%"></div>
+  
+      <!--
+    2. 설치 스크립트
+    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+  -->
+      <script charset="UTF-8" class="daum_roughmap_loader_script"
+        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
+      </script>
+  
+      <!-- 3. 실행 스크립트 -->
+      <script charset="UTF-8">
+        new daum.roughmap.Lander({
+          "timestamp": "1669247169154",
+          "key": "2cptv",
+          "mapHeight" : "480"
+        }).render();
+      </script>
+    </section>
+
+   <!-- FOOTER -->
+  <footer class="py-7 py-md-9 bg-black">
+    <div class="container px-4">
+      <div class="row gx-7">
+        <div class="col-sm-4">
+
+          <!-- Heading -->
+          <h5 class="text-xs text-primary">
+            About Us
+          </h5>
+
+          <!-- Text -->
+          <p class="mb-6">
+            저희는 100% 아몬드 가루, 국내산 재료만을 사용하여<br>
+            직접 만든 마카롱과 함께 쿠키(스모어), 휘낭시에,<br>
+            카이막, 레터링 케이크 등 여러가지 디저트를 손수<br>
+            만들어 판매하는 디저트 카페입니다:)
+          </p>
+
+        </div>
+        <div class="col-sm-4">  
+
+          <!-- Heading -->
+          <h5 class="text-xs text-primary">
+            Contact info
+          </h5>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6">
+            <li class="d-flex mb-2">
+              <div class="fas fa-map-marker-alt me-3 mt-2 fs-sm"></div>
+              인천 미추홀구 학익동 45-37번지 1층
+            </li>
+            <li class="d-flex mb-2">
+              <div class="fas fa-phone me-3 mt-2 fs-sm"></div>
+              010 - 4188 - 6073
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-sm-4">
+
+          <!-- Heading -->
+          <h5 class="text-xs text-primary">
+            Store hours
+          </h5>
+
+          <!-- Text -->
+          <div class="mb-3">
+            <div class="text-xs">Tuesday - Saturday</div>
+            <div class="font-serif">10:00 AM - 19:00 PM</div>
+          </div>
+
+          <!-- Text -->
+          <div class="mb-6">
+            <div class="text-xs">매주 일요일, 월요일 휴무</div>
+            <div class="text-xs">Free Wife</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+    
+    <!--  -->
+    <!-- TOAST -->
+    <div class="toast position-fixed bottom-0 start-50 translate-middle-x mb-3 mb-md-5" id="notification" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body mx-auto"></div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+  </body>
+</html>
